@@ -66,7 +66,12 @@ const Hero = () => {
               </motion.div>
               <div className="text-center">
                 <p className="text-muted-foreground mb-2">Hello, I'm</p>
-                <h1 className="text-hero gradient-text">Muhammad Anas</h1>
+                <h1
+                  style={{ lineHeight: 1.3 }}
+                  className="text-hero gradient-text"
+                >
+                  Hanzla Sibghat
+                </h1>
               </div>
               <motion.div
                 animate={{ scale: [1, 1.2, 1] }}
@@ -103,17 +108,31 @@ const Hero = () => {
                   AI Enthusiast
                 </span>
                 <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium">
-                  Coffee Addict ☕
+                  Tech Explorer 🚀
                 </span>
               </div>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Building scalable web applications and AI-powered solutions with{" "}
-                <span className="text-primary font-semibold">2+ years</span> of
-                experience in{" "}
-                <span className="text-primary font-semibold">Node.js</span>,{" "}
-                <span className="text-primary font-semibold">React</span>, and{" "}
-                <span className="text-primary font-semibold">
-                  cloud infrastructure
+                <span className="block mb-2 font-semibold text-primary">
+                  💻 Tech Stack
+                </span>
+                <span className="block mb-1">
+                  JavaScript, TypeScript, React, Next.js, Node.js
+                </span>
+                <span className="block mb-2 font-semibold text-primary">
+                  🤖 AI & GenAI Stack
+                </span>
+                <span className="block mb-1">
+                  Python, LangChain, OpenAI, PyTorch
+                </span>
+                <span className="block mb-2 font-semibold text-primary">
+                  🗄️ Databases
+                </span>
+                <span className="block mb-1">MongoDB, PostgreSQL, Redis</span>
+                <span className="block mb-2 font-semibold text-primary">
+                  🛠️ DevOps & Tools
+                </span>
+                <span className="block mb-1">
+                  Docker, GitHub Actions, Vercel, Linux
                 </span>
               </p>
             </motion.div>
@@ -133,7 +152,7 @@ const Hero = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="font-semibold">+49 170 7413792</p>
+                  <p className="font-semibold">+49 170 9098399</p>
                 </div>
               </div>
             </div>
@@ -171,7 +190,7 @@ const Hero = () => {
             <Button
               variant="outline"
               className="btn-ghost-hero px-8 py-4 text-lg group"
-              onClick={() => window.open("mailto:anashabib139@gmail.com")}
+              onClick={() => window.open("mailto:hanzlasib24@gmail.com")}
             >
               <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
               Get Resume

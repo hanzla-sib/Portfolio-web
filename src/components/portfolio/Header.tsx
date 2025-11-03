@@ -51,12 +51,12 @@ const Header = () => {
           >
             <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-lg">
-                MA
+                HS
               </span>
             </div>
             <div className="hidden md:block">
-              <h1 className="font-bold text-lg gradient-text">Muhammad Anas</h1>
-              <p className="text-xs text-muted-foreground">Software Engineer</p>
+              <h1 className="font-bold text-lg gradient-text">Hanzla Sibghat</h1>
+              <p className="text-xs text-muted-foreground">Software & AI Engineer</p>
             </div>
           </motion.div>
 
@@ -142,13 +142,13 @@ const Header = () => {
             ))}
             <div className="flex items-center justify-center space-x-4 pt-4 border-t border-border">
               <a
-                href="mailto:anashabib139@gmail.com"
+                href="mailto:hanzlasib24@gmail.com"
                 className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/AnasBaqai"
+                href="https://github.com/hanzla-sib"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
@@ -156,7 +156,7 @@ const Header = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/anas-baqai-bo21/"
+                href="https://www.linkedin.com/in/hanzlasibghat/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
