@@ -77,7 +77,7 @@ const Footer = () => {
                 className="w-16 h-16 bg-gradient-to-br from-primary to-primary-glow rounded-2xl flex items-center justify-center shadow-lg"
               >
                 <span className="text-white font-bold text-2xl">MA</span>
-              </motion.div>436
+              </motion.div>
               <div>
                 <h3 className="text-2xl font-bold gradient-text mb-1">
                   Hanzla Sibghat

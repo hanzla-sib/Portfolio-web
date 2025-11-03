@@ -85,13 +85,13 @@ const Header = () => {
             className="hidden lg:flex items-center space-x-4"
           >
             <a
-              href="mailto:anashabib139@gmail.com"
+              href="mailto:hanzlasib24@gmail.com"
               className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
             >
               <Mail className="w-5 h-5" />
             </a>
             <a
-              href="https://github.com/AnasBaqai"
+              href="https://github.com/hanzla-sib"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
@@ -99,7 +99,7 @@ const Header = () => {
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/anas-baqai-bo21/"
+              href="https://www.linkedin.com/in/hanzlasibghat/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
