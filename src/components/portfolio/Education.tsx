@@ -29,8 +29,8 @@ const Education = () => {
       degree: "BS in Software Engineering",
       university:
         "National University of Computer And Emerging Sciences (FAST-NUCES)",
-      location: "Karachi, Pakistan",
-      period: "Aug 2020 – Jun 2024",
+      location: "Islamabad, Pakistan",
+      period: "Aug 2019 – Jun 2023",
       status: "Completed",
       description:
         "Comprehensive undergraduate program covering software development lifecycle, data structures, algorithms, and modern programming paradigms.",

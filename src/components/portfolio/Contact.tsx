@@ -39,7 +39,7 @@ const Contact = () => {
     e.preventDefault();
 
     // Create mailto link with form data
-    const mailtoLink = `mailto:anashabib139@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:hanzlasib24@gmail.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
@@ -63,15 +63,15 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "anashabib139@gmail.com",
-      link: "mailto:anashabib139@gmail.com",
+      value: "hanzlasib24@gmail.com",
+      link: "mailto:hanzlasib24@gmail.com",
       color: "from-blue-500 to-cyan-600",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+49 170 7413792",
-      link: "tel:+491707413792",
+      value: "+49 170 9098399",
+      link: "tel:+491709098399",
       color: "from-green-500 to-emerald-600",
     },
     {
@@ -86,13 +86,13 @@ const Contact = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/AnasBaqai",
+      url: "https://github.com/hanzla-sib",
       color: "hover:text-gray-400",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://www.linkedin.com/in/anas-baqai-bo21/",
+      url: "https://www.linkedin.com/in/hanzlasibghat/",
       color: "hover:text-blue-500",
     },
   ];
@@ -395,7 +395,7 @@ const Contact = () => {
               <Button
                 onClick={() =>
                   window.open(
-                    "mailto:anashabib139@gmail.com?subject=Job Opportunity"
+                    "mailto:hanzlasib24@gmail.com?subject=Job Opportunity"
                   )
                 }
                 className="btn-hero"
@@ -406,7 +406,7 @@ const Contact = () => {
                 variant="outline"
                 onClick={() =>
                   window.open(
-                    "https://www.linkedin.com/in/anas-baqai-bo21/",
+                    "https://www.linkedin.com/in/hanzlasibghat/",
                     "_blank"
                   )
                 }
