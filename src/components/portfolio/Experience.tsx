@@ -10,51 +10,88 @@ const Experience = () => {
 
   const experiences = [
     {
-      title: "Associate Software Engineer",
-      company: "BariTechSol",
-      location: "Karachi, Pakistan",
-      period: "Jun 2024 – Sep 2024",
-      type: "Full time",
+      title: "Software & AI Engineer",
+      company: "Siemens AG",
+      location: "Munich, Germany",
+      period: "February 2025 – current",
+      type: "Part time (remote)",
       description:
-        "Specialized in building robust integration solutions and automated testing frameworks.",
+        "Developing intelligent web applications and AI-powered productivity tools for enterprise environments.",
       achievements: [
-        "Engineered Docker-based TypeScript modules that integrate seamlessly with multiple carrier APIs, reinforced by Jest test suites and resilient auto-retry/error-handling logic.",
-        "Architected an end-to-end automated test framework and CI workflows that continuously validate every critical service, with clear documentation to accelerate future development.",
+        "Built advanced browser-based productivity tools using React.js, WebExtensions, and TypeScript.",
+        "Integrated Large Language Models (LLMs) such as GPT-4, Mistral, and DeepSeek via LangChain and Ollama to enable contextual understanding and smart assistant features.",
+        "Implemented Retrieval-Augmented Generation (RAG) pipelines with vector embeddings for accurate, real-time document-based answers.",
+        "Enhanced AI response relevance through prompt engineering and fine-tuned query processing over proprietary Siemens data.",
+        "Engineered Docker-based TypeScript modules for seamless integration with carrier APIs, reinforced by Jest test suites and resilient error-handling logic.",
+        "Architected automated test frameworks and CI workflows to continuously validate critical services, accelerating future development.",
       ],
       technologies: [
+        "React.js",
         "TypeScript",
-        "Jest",
+        "WebExtensions",
+        "LangChain",
+        "Ollama",
+        "GPT-4",
+        "Mistral",
+        "DeepSeek",
+        "RAG",
+        "Vector Embeddings",
         "Docker",
+        "Jest",
         "CI/CD",
-        "Integration Testing",
-        "Unit Testing",
-        "REST APIs",
       ],
       companyColor: "from-blue-500 to-purple-600",
     },
     {
-      title: "Full Stack Software Engineer",
-      company: "WorkSpin",
-      location: "Karachi, Pakistan",
-      period: "Jul 2023 – May 2024",
-      type: "Full time",
+      title: "Full Stack Developer",
+      company: "National Database and Registration Authority (NADRA)",
+      location: "Islamabad, Pakistan",
+      period: "July 2024 – Jul 2024",
+      type: "Full time (On Site)",
       description:
-        "Led full-stack development of scalable event applications and backend optimization initiatives.",
+        "Developed and optimized IoT-integrated kiosks and customer service workflows for national identity systems.",
       achievements: [
-        "Designed and implemented a scalable Node.js backend for real-time event applications, integrating OAuth/JWT authentication, WebSocket communication, and rate-limited, sanitized APIs. Supported over 40,000 concurrent users with zero downtime.",
-        "Improved backend performance by optimizing CI/CD pipelines, redesigning MongoDB schemas, applying indexing strategies, and introducing Redis caching. Achieved a 70% reduction in query latency and a 50% decrease in peak database load.",
-        "Developed and deployed a comprehensive gym management backend with secure authentication, dynamic CMS, scheduling, fitness and nutrition APIs, and automated notifications via webhooks and cron jobs.",
+        "Developed automated IoT-integrated kiosks with NestJS and Next.js, reducing manual interventions by 45%.",
+        "Optimized workflows in Next.js and NestJS, cutting processing time by 40% and improving customer service.",
+        "Enhanced state management with Redux and React Context, reducing page reloads by 25%.",
+        "Upgraded UI/UX with Material-UI, increasing user satisfaction and reducing bounce rate by 15%.",
+        "Improved system uptime by 20% via robust error handling and API optimization.",
       ],
       technologies: [
-        "Node.js",
-        "MongoDB",
-        "Redis",
-        "WebSocket",
-        "OAuth/JWT",
-        "CI/CD",
-        "Performance Optimization",
+        "NestJS",
+        "Next.js",
+        "Redux",
+        "React Context",
+        "Material-UI",
+        "IoT",
+        "API Optimization",
       ],
-      companyColor: "from-green-500 to-emerald-600",
+      companyColor: "from-orange-500 to-yellow-600",
+    },
+    {
+      title: "Full Stack Developer",
+      company: "PLC Group",
+      location: "Ontario, Canada (Remote)",
+      period: "July 2023 – Feb 2024",
+      type: "Full time (Remote)",
+      description:
+        "Designed and optimized scalable GraphQL APIs and improved data fetching for enterprise applications.",
+      achievements: [
+        "Reduced query complexity by 35% by designing scalable GraphQL APIs with TypeScript.",
+        "Boosted data fetching speed by 50% using React Query and optimized GraphQL queries.",
+        "Achieved 95% test coverage with Jest and React Testing Library.",
+        "Improved backend efficiency by adding Redis caching and Redux Toolkit for state handling.",
+      ],
+      technologies: [
+        "TypeScript",
+        "GraphQL",
+        "React Query",
+        "Jest",
+        "React Testing Library",
+        "Redis",
+        "Redux Toolkit",
+      ],
+      companyColor: "from-cyan-500 to-blue-600",
     },
   ];
 
@@ -93,7 +130,7 @@ const Experience = () => {
             Professional Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            2+ years of hands-on experience building scalable applications,
+            2.5+ years of hands-on experience building scalable applications,
             optimizing performance, and delivering robust software solutions.
           </p>
         </motion.div>
@@ -233,7 +270,7 @@ const Experience = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <h4 className="text-3xl font-bold text-primary mb-2">40K+</h4>
+                <h4 className="text-3xl font-bold text-primary mb-2">100K+</h4>
                 <p className="text-sm text-muted-foreground">
                   Concurrent Users Supported
                 </p>

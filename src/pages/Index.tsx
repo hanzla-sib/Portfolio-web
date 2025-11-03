@@ -18,37 +18,38 @@ const Index = () => {
             <h2 className="text-section-title gradient-text mb-6">About Me</h2>
             <div className="max-w-4xl mx-auto">
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                I'm a passionate{" "}
+                I'm{" "}
+
+                currently working at{" "}
                 <span className="text-primary font-semibold">
-                  Software Engineer
+                  Siemens Munich
                 </span>{" "}
-                with 2+ years of experience building scalable web applications
-                and AI-powered solutions. Currently pursuing my{" "}
+                as a{" "}
                 <span className="text-primary font-semibold">
-                  MSc in Computer Science
-                </span>{" "}
-                at the University of Passau, Germany, while staying actively
-                engaged with the latest technologies.
+                  Software & AI Engineer
+                </span>
+                .
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                🚀 Full Stack Developer | 🤖 GenAI Engineer | 🧩 LLM Specialist
+                | 🧠 AI Solutions Architect
+                <br />
+                I’m passionate about transforming ideas into intelligent,
+                production-ready solutions. With 2.5 years of full-stack
+                experience, I specialize in frontend development using React and
+                Next.js, and build scalable, user-focused applications. I also
+                develop GenAI systems leveraging LangChain, RAG pipelines, and
+                advanced prompt engineering to automate workflows and deliver
+                data-driven insights.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                My expertise spans{" "}
+                🎯{" "}
                 <span className="text-primary font-semibold">
-                  full-stack development
-                </span>
-                ,
-                <span className="text-primary font-semibold">
-                  {" "}
-                  performance optimization
-                </span>
-                , and
-                <span className="text-primary font-semibold">
-                  {" "}
-                  modern DevOps practices
-                </span>
-                . I'm particularly passionate about building solutions that make
-                a real impact, from supporting 40,000+ concurrent users to
-                implementing AI-driven interfaces that revolutionize how
-                developers interact with databases.
+                  Current Focus:
+                </span>{" "}
+                Multi-agent systems, vector databases, and enterprise AI
+                integrations while pursuing MSc Computer Science at University
+                of Passau.
               </p>
             </div>
           </div>
