@@ -89,7 +89,7 @@ const Hero = () => {
               className="mb-8"
             >
               <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-                <span className="inline-block">Software Engineer</span>
+                <span className="inline-block">Software & AI Engineer</span>
                 <motion.span
                   animate={{ opacity: [1, 0] }}
                   transition={{
