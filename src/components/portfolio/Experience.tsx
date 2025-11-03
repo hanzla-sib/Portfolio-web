@@ -51,14 +51,14 @@ const Experience = () => {
       description:
         "Developed and optimized IoT-integrated kiosks and customer service workflows for national identity systems.",
       achievements: [
-        "Developed automated IoT-integrated kiosks with NestJS and Next.js, reducing manual interventions by 45%.",
-        "Optimized workflows in Next.js and NestJS, cutting processing time by 40% and improving customer service.",
+        "Developed automated IoT-integrated kiosks with java and Next.js, reducing manual interventions by 45%.",
+        "Optimized workflows in Next.js and java, cutting processing time by 40% and improving customer service.",
         "Enhanced state management with Redux and React Context, reducing page reloads by 25%.",
         "Upgraded UI/UX with Material-UI, increasing user satisfaction and reducing bounce rate by 15%.",
         "Improved system uptime by 20% via robust error handling and API optimization.",
       ],
       technologies: [
-        "NestJS",
+        "java",
         "Next.js",
         "Redux",
         "React Context",
