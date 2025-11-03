@@ -13,17 +13,17 @@ const Footer = () => {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/AnasBaqai",
+      url: "https://github.com/hanzla-sib",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://www.linkedin.com/in/anas-baqai-bo21/",
+      url: "https://www.linkedin.com/in/hanzlasibghat/",
     },
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:anashabib139@gmail.com",
+      url: "mailto:hanzlasib24@gmail.com",
     },
   ];
 
@@ -77,13 +77,13 @@ const Footer = () => {
                 className="w-16 h-16 bg-gradient-to-br from-primary to-primary-glow rounded-2xl flex items-center justify-center shadow-lg"
               >
                 <span className="text-white font-bold text-2xl">MA</span>
-              </motion.div>
+              </motion.div>436
               <div>
                 <h3 className="text-2xl font-bold gradient-text mb-1">
-                  Muhammad Anas
+                  Hanzla Sibghat
                 </h3>
                 <p className="text-primary font-medium mb-2">
-                  Software Engineer & AI Enthusiast
+                  Software & AI Engineer
                 </p>
                 <div className="flex gap-2">
                   <span className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">
@@ -103,7 +103,7 @@ const Footer = () => {
 
             {/* Tech Stack Mini Display */}
             <div className="flex flex-wrap gap-2">
-              {["React", "Node.js", "Python", "AI/ML", "Docker"].map(
+              {["React", "Next.js", "Node.js", "TypeScript", "Python", "LangChain", "Docker"].map(
                 (tech, index) => (
                   <motion.span
                     key={tech}
@@ -182,12 +182,12 @@ const Footer = () => {
               <div className="flex items-center gap-3 text-sm">
                 <span className="text-lg">📧</span>
                 <span className="text-muted-foreground">
-                  anashabib139@gmail.com
+                  hanzlasib24@gmail.com
                 </span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <span className="text-lg">📱</span>
-                <span className="text-muted-foreground">+49 170 7413792</span>
+                <span className="text-muted-foreground">+49 170 9098399</span>
               </div>
               <div className="flex items-center gap-3 text-sm">
                 <span className="text-lg">📍</span>
@@ -201,19 +201,19 @@ const Footer = () => {
                 {
                   name: "GitHub",
                   icon: Github,
-                  url: "https://github.com/AnasBaqai",
+                  url: "https://github.com/hanzla-sib",
                   color: "hover:text-gray-400",
                 },
                 {
                   name: "LinkedIn",
                   icon: Linkedin,
-                  url: "https://www.linkedin.com/in/anas-baqai-bo21/",
+                  url: "https://www.linkedin.com/in/hanzlasibghat/",
                   color: "hover:text-blue-500",
                 },
                 {
                   name: "Email",
                   icon: Mail,
-                  url: "mailto:anashabib139@gmail.com",
+                  url: "mailto:hanzlasib24@gmail.com",
                   color: "hover:text-green-500",
                 },
               ].map((social) => (
@@ -249,7 +249,7 @@ const Footer = () => {
               >
                 <Heart className="w-4 h-4 text-red-500" />
               </motion.span>
-              and lots of ☕ by Muhammad Anas
+              and lots of ☕ by Hanzla Sibghat
             </p>
           </div>
 
