@@ -190,7 +190,14 @@ const Hero = () => {
             <Button
               variant="outline"
               className="btn-ghost-hero px-8 py-4 text-lg group"
-              onClick={() => window.open("mailto:hanzlasib24@gmail.com")}
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/resume.pdf';
+                link.download = 'Hanzla_Sibghat_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
             >
               <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
               Get Resume
