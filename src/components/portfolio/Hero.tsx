@@ -208,14 +208,19 @@ const Hero = () => {
             <div className="flex flex-wrap items-center justify-center gap-3">
               {[
                 "React.js",
+                "Next.js",
                 "Node.js",
                 "TypeScript",
                 "Python",
-                "AI/ML",
+                "LangChain",
+                "OpenAI",
                 "Docker",
-                "AWS",
                 "MongoDB",
                 "PostgreSQL",
+                "Redis",
+                "GitHub Actions",
+                "Vercel",
+                "Linux",
               ].map((skill, index) => (
                 <motion.span
                   key={skill}
