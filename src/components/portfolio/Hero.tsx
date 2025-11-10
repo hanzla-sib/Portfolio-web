@@ -113,26 +113,31 @@ const Hero = () => {
               </div>
               <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 <span className="block mb-2 font-semibold text-primary">
-                  💻 Tech Stack
+                  💻 Core Stack
                 </span>
                 <span className="block mb-1">
-                  JavaScript, TypeScript, React, Next.js, Node.js
+                  JavaScript, TypeScript, React, Next.js, Node.js, NestJS
                 </span>
+
                 <span className="block mb-2 font-semibold text-primary">
-                  🤖 AI & GenAI Stack
+                  🤖 AI & Generative AI
                 </span>
                 <span className="block mb-1">
-                  Python, LangChain, OpenAI, PyTorch
+                  Python, LangChain, LangGraph, OpenAI, PyTorch, RAG Systems
                 </span>
+
                 <span className="block mb-2 font-semibold text-primary">
-                  🗄️ Databases
+                  🗄️ Databases & APIs
                 </span>
-                <span className="block mb-1">MongoDB, PostgreSQL, Redis</span>
+                <span className="block mb-1">
+                  PostgreSQL, MongoDB, MySQL, Redis, GraphQL, REST
+                </span>
+
                 <span className="block mb-2 font-semibold text-primary">
                   🛠️ DevOps & Tools
                 </span>
                 <span className="block mb-1">
-                  Docker, GitHub Actions, Vercel, Linux
+                  Docker, GitHub Actions, GCP, Vercel, Swagger, Postman, Linux
                 </span>
               </p>
             </motion.div>
@@ -191,9 +196,9 @@ const Hero = () => {
               variant="outline"
               className="btn-ghost-hero px-8 py-4 text-lg group"
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/resume.pdf';
-                link.download = 'Hanzla_Sibghat_Resume.pdf';
+                const link = document.createElement("a");
+                link.href = "/resume.pdf";
+                link.download = "Hanzla_Sibghat_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
