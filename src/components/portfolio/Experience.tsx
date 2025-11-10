@@ -48,7 +48,7 @@ const Experience = () => {
       title: "Full Stack Developer",
       company: "National Database and Registration Authority (NADRA)",
       location: "Islamabad, Pakistan",
-      period: "July 2024 – Jul 2024",
+      period: "Feb 2024 – Sept 2024",
       type: "Full time (On Site)",
       description:
         "Developed and optimized IoT-integrated kiosks and customer service workflows for national identity systems.",
