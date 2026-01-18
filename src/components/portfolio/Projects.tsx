@@ -32,6 +32,7 @@ const Projects = () => {
         "prism-react-renderer",
       ],
       status: "Live",
+      badge: "AI Powered",
       links: [
         { label: "View", url: "https://github.com/hanzla-sib/PromptCraft-AI" },
         { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
@@ -50,6 +51,7 @@ const Projects = () => {
         "Error Detection",
       ],
       status: "Live",
+      badge: "AI Powered",
       links: [
         { label: "View", url: "https://github.com/hanzla-sib/CompAIler" },
         { label: "Live Demo", url: "https://comp-a-iler.vercel.app/" },
@@ -69,6 +71,7 @@ const Projects = () => {
         "Code Review",
       ],
       status: "Live",
+      badge: "AI Powered",
       links: [
         { label: "View", url: "https://github.com/hanzla-sib/CodeSensei" },
         { label: "Live Demo", url: "https://code-sensei-1l6g.vercel.app/" },
@@ -258,7 +261,7 @@ const Projects = () => {
                 <p className="text-sm text-muted-foreground">Major Projects</p>
               </div>
               <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">2</h4>
+                <h4 className="text-2xl font-bold text-primary mb-2">3</h4>
                 <p className="text-sm text-muted-foreground">
                   AI-Powered Solutions
                 </p>
