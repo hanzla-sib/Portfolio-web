@@ -115,7 +115,7 @@ const Education = () => {
           className="relative mb-16"
         >
           {/* Timeline Line */}
-          <div className="absolute left-8 md:left-1/2 transform md:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+          <div className="absolute left-4 sm:left-8 md:left-1/2 transform md:-translate-x-0.5 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent" />
 
           {education.map((edu, index) => (
             <motion.div
@@ -126,11 +126,11 @@ const Education = () => {
               }`}
             >
               {/* Timeline Dot */}
-              <div className="absolute left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg z-10" />
+              <div className="absolute left-2 sm:left-6 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background shadow-lg z-10" />
 
               {/* Content Card */}
               <div
-                className={`w-full md:w-5/12 ml-16 md:ml-0 ${
+                className={`w-full md:w-5/12 ml-0 sm:ml-8 md:ml-0 ${
                   index % 2 === 0 ? "md:mr-8" : "md:ml-8"
                 }`}
               >
