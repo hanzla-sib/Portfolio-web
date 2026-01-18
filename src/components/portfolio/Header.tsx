@@ -48,7 +48,7 @@ const Header = () => {
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="flex items-center space-x-3 mb-2 sm:mb-0"
+              className="flex items-center space-x-3 mb-2 sm:mb-0 mt-3 sm:mt-0"
             >
               <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-lg">
