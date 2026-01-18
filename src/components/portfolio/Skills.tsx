@@ -163,7 +163,7 @@ const Skills = () => {
           ref={ref}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-20 w-full"
         >
           {Object.entries(myJourney).map(([key, area], index) => (
             <motion.div
@@ -176,13 +176,13 @@ const Skills = () => {
                 type: "spring",
                 bounce: 0.3,
               }}
-              className={`${area.position} group relative`}
+              className="w-full group relative"
               onMouseEnter={() => setHoveredSkill(key)}
               onMouseLeave={() => setHoveredSkill(null)}
             >
-              <div className="glass-card h-full hover-glow overflow-hidden transform perspective-1000">
+              <div className="glass-card h-full hover-glow overflow-hidden transform perspective-1000 p-4 sm:p-6">
                 {/* Header */}
-                <div className="flex items-start gap-4 mb-6 relative z-10">
+                <div className="flex flex-col xs:flex-row items-start gap-2 sm:gap-4 mb-4 sm:mb-6 relative z-10">
                   <motion.div
                     className={`p-3 rounded-2xl bg-gradient-to-r ${area.color} shadow-xl`}
                     whileHover={{ scale: 1.1, rotate: 5 }}
@@ -191,10 +191,10 @@ const Skills = () => {
                     <area.icon className="w-6 h-6 text-white" />
                   </motion.div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors mb-1">
+                    <h3 className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors mb-1">
                       {area.title}
                     </h3>
-                    <p className="text-sm text-primary font-medium opacity-80">
+                    <p className="text-xs sm:text-sm text-primary font-medium opacity-80">
                       {area.subtitle}
                     </p>
                   </div>
@@ -202,7 +202,7 @@ const Skills = () => {
 
                 {/* Story */}
                 <motion.p
-                  className="text-muted-foreground text-sm leading-relaxed mb-6 italic"
+                  className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6 italic"
                   initial={{ opacity: 0.7 }}
                   whileHover={{ opacity: 1 }}
                 >
@@ -210,7 +210,7 @@ const Skills = () => {
                 </motion.p>
 
                 {/* Skills with Creative Layout */}
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {area.skills.map((skill, skillIndex) => (
                     <motion.div
                       key={skill}
@@ -221,7 +221,7 @@ const Skills = () => {
                         duration: 0.5,
                         type: "spring",
                       }}
-                      className="flex items-center gap-3 group/skill"
+                      className="flex items-center gap-2 sm:gap-3 group/skill flex-wrap"
                     >
                       <motion.div
                         className={`w-3 h-3 rounded-full bg-gradient-to-r ${area.color} relative`}
@@ -237,7 +237,7 @@ const Skills = () => {
                           />
                         )}
                       </motion.div>
-                      <span className="text-sm font-medium text-muted-foreground group-hover/skill:text-foreground transition-colors">
+                      <span className="text-xs sm:text-sm font-medium text-muted-foreground group-hover/skill:text-foreground transition-colors break-words">
                         {skill}
                       </span>
                     </motion.div>
