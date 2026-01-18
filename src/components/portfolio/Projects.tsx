@@ -113,7 +113,7 @@ const Projects = () => {
       technologies: ["C++", "OpenGL"],
       status: "Completed",
       links: [
-        { label: "Source", url: "https://github.com/hanzla-sib/Dodge_em-game" },
+        { label: "View", url: "https://github.com/hanzla-sib/Dodge_em-game" },
       ],
       description:
         "Created a car game clone with interactive gameplay, smooth animations, and an intuitive UI using C++ and OpenGL.",
@@ -125,7 +125,7 @@ const Projects = () => {
       status: "Completed",
       links: [
         {
-          label: "Source",
+          label: "View",
           url: "https://github.com/hanzla-sib/Network-Analysis-C-",
         },
         { label: "Demo", url: "https://youtu.be/SnBa_IvpW74" },
@@ -134,20 +134,6 @@ const Projects = () => {
         "Large-scale network analysis tool capable of processing and analyzing graphs with millions of nodes. Optimized for performance and complex data structures.",
     },
 
-    {
-      title: "Network-Analysis Graphs",
-      techStack: "C++, File Handling",
-      technologies: ["C++", "File Handling", "Data Visualization"],
-      status: "Completed",
-      links: [
-        {
-          label: "View",
-          url: "https://github.com/hanzla-sib/Network-Analysis-C-",
-        },
-      ],
-      description:
-        "Efficient graph analysis and visualization using C++. Supports interactive exploration of large datasets.",
-    },
   ];
 
   const containerVariants = {
