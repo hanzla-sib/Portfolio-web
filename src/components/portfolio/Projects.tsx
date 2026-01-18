@@ -33,8 +33,8 @@ const Projects = () => {
       ],
       status: "Live",
       links: [
-        { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
         { label: "View", url: "https://github.com/hanzla-sib/PromptCraft-AI" },
+        { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
       ],
       description:
         "A beginner-friendly, modern web application built with Next.js. Explore AI-powered features like recipe generation, text summarization, code generation with live preview, chat (with Google Search and Think modes), and image analysis. Uses Google Gemini API for AI responses, Tailwind CSS for styling, and Framer Motion for smooth animations. Markdown rendering and code preview make it educational and easy to use.",
