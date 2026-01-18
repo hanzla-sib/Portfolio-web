@@ -123,7 +123,7 @@ const Skills = () => {
       subtitle: "Human Languages",
       icon: Globe,
       story: "Code is universal, but communication bridges worlds.",
-      skills: ["English [C1]", "German [A2]", "Urdu [Native]"],
+      skills: ["English [C1]", "German [Current: A2, moving to B1] 🇩🇪", "Urdu [Native]"],
       color: "from-rose-500 to-pink-600",
       position: "col-span-1",
     },

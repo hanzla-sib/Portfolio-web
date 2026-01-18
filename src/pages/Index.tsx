@@ -17,7 +17,15 @@ const Index = () => {
           <div className="container-custom text-center">
             <h2 className="text-section-title gradient-text mb-6">About Me</h2>
             <div className="max-w-4xl mx-auto">
+              <div className="mb-4 flex flex-wrap justify-center gap-2">
+                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Google Cloud Fundamentals</span>
+              </div>
+              <div className="mb-4 flex flex-wrap justify-center gap-2">
+                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">German Language: Current A2, moving to B1 (actively learning) 🇩🇪</span>
+              </div>
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+                <span className="block mb-2 font-semibold text-primary">Eligible to work in Germany (EU student visa)</span>
+                <span className="block mb-2 font-semibold text-primary">Passionate about German tech culture and innovation</span>
                 I'm{" "}
 
                 currently working at{" "}
@@ -43,6 +51,8 @@ const Index = () => {
                 data-driven insights.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
+                <span className="block mb-2 font-semibold text-primary">Soft Skills: </span>
+                <span className="block mb-1">Teamwork, Communication, Adaptability, Problem Solving</span>
                 🎯{" "}
                 <span className="text-primary font-semibold">
                   Current Focus:

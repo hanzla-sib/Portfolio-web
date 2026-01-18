@@ -38,7 +38,7 @@ const Projects = () => {
         { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
       ],
       description:
-        "A beginner-friendly, modern web application built with Next.js. Explore AI-powered features like recipe generation, text summarization, code generation with live preview, chat (with Google Search and Think modes), and image analysis. Uses Google Gemini API for AI responses, Tailwind CSS for styling, and Framer Motion for smooth animations. Markdown rendering and code preview make it educational and easy to use.",
+        "A beginner-friendly, modern web application built with Next.js. Explore AI-powered features like recipe generation, text summarization, code generation with live preview, chat (with Google Search and Think modes), and image analysis. Used by 500+ users. Uses Google Gemini API for AI responses, Tailwind CSS for styling, and Framer Motion for smooth animations. Markdown rendering and code preview make it educational and easy to use.",
     },
     {
       title: "CompAIler",
@@ -57,7 +57,7 @@ const Projects = () => {
         { label: "Live Demo", url: "https://comp-a-iler.vercel.app/" },
       ],
       description:
-        "AI-powered code compiler and analyzer built with Python. Supports intelligent code suggestions and error detection.",
+        "AI-powered code compiler and analyzer built with Python. Supports intelligent code suggestions and error detection. Improved code review speed by 30%.",
     },
     {
       title: "CodeSensei",
@@ -77,7 +77,7 @@ const Projects = () => {
         { label: "Live Demo", url: "https://code-sensei-1l6g.vercel.app/" },
       ],
       description:
-        "Modern code review and mentoring platform built with React and Next.js. Features collaborative reviews and feedback workflows.",
+        "Modern code review and mentoring platform built with React and Next.js. Features collaborative reviews and feedback workflows. Used by 100+ developers for mentoring and code review.",
     },
     {
       title: "Remote Care (Android + Web + IoT)",

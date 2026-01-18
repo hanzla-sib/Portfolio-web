@@ -68,8 +68,15 @@ const Contact = () => {
       color: "from-blue-500 to-cyan-600",
     },
     {
+      icon: Linkedin,
+      title: "LinkedIn",
+      value: "linkedin.com/in/hanzlasibghat",
+      link: "https://www.linkedin.com/in/hanzlasibghat/",
+      color: "from-blue-500 to-blue-700",
+    },
+    {
       icon: Phone,
-      title: "Phone",
+      title: "German Phone",
       value: "+49 170 9098399",
       link: "tel:+491709098399",
       color: "from-green-500 to-emerald-600",
