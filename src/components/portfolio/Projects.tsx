@@ -19,6 +19,27 @@ const Projects = () => {
 
   const projects = [
     {
+      title: "PromptCraft-AI",
+      techStack: "Next.js, React, Tailwind CSS, Framer Motion, Google Gemini API",
+      technologies: [
+        "Next.js",
+        "React",
+        "Tailwind CSS",
+        "Framer Motion",
+        "Google Gemini API",
+        "AI Integration",
+        "Markdown Rendering",
+        "prism-react-renderer",
+      ],
+      status: "Live",
+      links: [
+        { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
+        { label: "View", url: "https://github.com/hanzla-sib/PromptCraft-AI" },
+      ],
+      description:
+        "A beginner-friendly, modern web application built with Next.js. Explore AI-powered features like recipe generation, text summarization, code generation with live preview, chat (with Google Search and Think modes), and image analysis. Uses Google Gemini API for AI responses, Tailwind CSS for styling, and Framer Motion for smooth animations. Markdown rendering and code preview make it educational and easy to use.",
+    },
+    {
       title: "CompAIler",
       techStack: "Python, AI",
       technologies: [
@@ -31,6 +52,7 @@ const Projects = () => {
       status: "Live",
       links: [
         { label: "View", url: "https://github.com/hanzla-sib/CompAIler" },
+        { label: "Live Demo", url: "https://comp-a-iler.vercel.app/" },
       ],
       description:
         "AI-powered code compiler and analyzer built with Python. Supports intelligent code suggestions and error detection.",
@@ -49,6 +71,7 @@ const Projects = () => {
       status: "Live",
       links: [
         { label: "View", url: "https://github.com/hanzla-sib/CodeSensei" },
+        { label: "Live Demo", url: "https://code-sensei-1l6g.vercel.app/" },
       ],
       description:
         "Modern code review and mentoring platform built with React and Next.js. Features collaborative reviews and feedback workflows.",
