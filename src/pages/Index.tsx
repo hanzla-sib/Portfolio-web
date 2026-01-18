@@ -13,7 +13,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <section id="about" className="section-padding bg-muted/20">
+        <section id="about" className="section-padding bg-muted/20 mt-4">
           <div className="container-custom text-center">
             <h2 className="text-section-title gradient-text mb-6">About Me</h2>
             <div className="max-w-4xl mx-auto">
