@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24">
+    <section className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden pt-16 sm:pt-20 md:pt-24 px-4 sm:px-6">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -47,8 +47,8 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container-custom relative z-10">
-        <div className="text-center max-w-4xl mx-auto">
+      <div className="container-custom relative z-10 px-2 sm:px-6">
+        <div className="text-center max-w-xl sm:max-w-2xl md:max-w-4xl mx-auto">
           {/* Main Heading */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -56,7 +56,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="mb-8"
           >
-            <div className="flex items-center justify-center gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 sm:mb-12">
               <motion.div
                 animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}

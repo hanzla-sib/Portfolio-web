@@ -40,25 +40,37 @@ const Header = () => {
         isScrolled ? "glass backdrop-blur-xl" : "bg-transparent"
       }`}
     >
-      <div className="container-custom">
-        <div className="flex items-center justify-between h-16 md:h-20">
+      <div className="container-custom px-4 sm:px-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between h-16 md:h-20 w-full">
           {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-            className="flex items-center space-x-3"
-          >
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">
-                HS
-              </span>
-            </div>
-            <div className="hidden md:block">
-              <h1 className="font-bold text-lg gradient-text">Hanzla Sibghat</h1>
-              <p className="text-xs text-muted-foreground">Software & AI Engineer</p>
-            </div>
-          </motion.div>
+          <div className="flex items-center w-full justify-between">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: 0.2 }}
+              className="flex items-center space-x-3 mb-2 sm:mb-0"
+            >
+              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-bold text-lg">
+                  HS
+                </span>
+              </div>
+              <div className="block md:block text-center md:text-left">
+                <h1 className="font-bold text-base sm:text-lg gradient-text">Hanzla Sibghat</h1>
+                <p className="text-xs sm:text-sm text-muted-foreground">Software & AI Engineer</p>
+              </div>
+            </motion.div>
+            {/* Mobile Menu Button - moved to right with margin */}
+            <motion.button
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.3 }}
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 ml-2 flex-shrink-0"
+            >
+              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            </motion.button>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -108,16 +120,7 @@ const Header = () => {
             </a>
           </motion.div>
 
-          {/* Mobile Menu Button */}
-          <motion.button
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.3 }}
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </motion.button>
+          {/* ...existing code... */}
         </div>
 
         {/* Mobile Navigation */}
