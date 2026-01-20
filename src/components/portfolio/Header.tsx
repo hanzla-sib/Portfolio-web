@@ -25,11 +25,13 @@ const Header = () => {
   ];
 
   const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
     setIsOpen(false);
+    setTimeout(() => {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 200); // Delay to allow menu to close and DOM to update
   };
 
   return (
@@ -66,7 +68,7 @@ const Header = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.3 }}
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 ml-2 flex-shrink-0"
+               className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 ml-2 flex-shrink-0"
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </motion.button>
