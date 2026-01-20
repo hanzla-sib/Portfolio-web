@@ -16,59 +16,34 @@ const Index = () => {
         <section id="about" className="section-padding bg-muted/20 mt-4">
           <div className="container-custom text-center">
             <h2 className="text-section-title gradient-text mb-6">About Me</h2>
-            <div className="max-w-4xl mx-auto">
-              <div className="mb-4 flex flex-wrap justify-center gap-2">
-                <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Google Cloud Fundamentals</span>
-              </div>
-              <div className="mb-4 flex flex-wrap justify-center gap-2">
-                <span className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">German Language: Current A2, moving to B1 (actively learning) 🇩🇪</span>
-              </div>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                 <span className="block mb-2 font-semibold text-primary">Eligible to work in Germany (EU student visa)</span>
-                <span className="block mb-2 font-semibold text-primary">Passionate about German tech culture and innovation</span>
-                I'm{" "}
-
-                currently working at{" "}
-                <span
-                  className="inline-block px-3 py-1 font-extrabold rounded shadow-xl animate-pulse border-2 border-accent"
-                  style={{
-                    background: 'linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%)',
-                    color: 'white',
-                    letterSpacing: '0.5px',
-                    fontSize: '1.15em',
-                    boxShadow: '0 4px 24px 0 rgba(59,130,246,0.15)'
-                  }}
-                >
-                  Siemens Munich
-                </span>{" "}
-                as a{" "}
-                <span className="text-primary font-semibold">
-                  Software & AI Engineer
+                <span className="block mb-2 font-semibold text-primary">Currently at
+                  <span
+                    className="inline-block px-3 py-1 font-extrabold rounded shadow-xl animate-pulse border-2 border-accent mx-1"
+                    style={{
+                      background: 'linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%)',
+                      color: 'white',
+                      letterSpacing: '0.5px',
+                      fontSize: '1.15em',
+                      boxShadow: '0 4px 24px 0 rgba(59,130,246,0.15)'
+                    }}
+                  >
+                    Siemens Munich
+                  </span>
+                  as Software & AI Engineer
                 </span>
-                .
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-                🚀 Full Stack Developer | 🤖 GenAI Engineer | 🧩 LLM Specialist
-                | 🧠 AI Solutions Architect
                 <br />
-                I’m passionate about transforming ideas into intelligent,
-                production-ready solutions. With 2.5 years of full-stack
-                experience, I specialize in frontend development using React and
-                Next.js, and build scalable, user-focused applications. I also
-                develop GenAI systems leveraging LangChain, RAG pipelines, and
-                advanced prompt engineering to automate workflows and deliver
-                data-driven insights.
+                3+ years experience building scalable, user-focused apps with React, Next.js, and GenAI (LangChain, RAG, LLMs).
+              </p>
+              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                🚀 Full Stack & GenAI Engineer | 🧠 AI Solutions Architect
+                <br />
+                MSc Computer Science, University of Passau
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                <span className="block mb-2 font-semibold text-primary">Soft Skills: </span>
-                <span className="block mb-1">Teamwork, Communication, Adaptability, Problem Solving</span>
-                🎯{" "}
-                <span className="text-primary font-semibold">
-                  Current Focus:
-                </span>{" "}
-                Multi-agent systems, vector databases, and enterprise AI
-                integrations while pursuing MSc Computer Science at University
-                of Passau.
+                <span className="font-semibold text-primary">Key strengths:</span> Fast learner, creative problem solver, clear communicator, thrive in cross-functional teams.
               </p>
             </div>
           </div>
