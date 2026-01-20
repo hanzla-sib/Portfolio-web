@@ -49,7 +49,7 @@ const Hero = () => {
 
       <div className="container-custom relative z-10 px-2 sm:px-6">
         <div className="text-center max-w-xl sm:max-w-2xl md:max-w-4xl mx-auto">
-          {/* Main Heading */}
+          {/* Main Heading with Avatar */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -57,14 +57,13 @@ const Hero = () => {
             className="mb-8"
           >
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 sm:mb-12">
-              <motion.div
-                animate={{ rotate: [0, 5, -5, 0] }}
-                transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
-                className="text-4xl"
-              >
-                👋
-              </motion.div>
-              <div className="text-center">
+              <img
+                src="/img.jpeg"
+                alt="Hanzla Sibghat Avatar"
+                className="w-24 h-24 rounded-full border-4 border-primary shadow-lg object-cover bg-white "
+                style={{objectPosition: 'center'}}
+              />
+              <div className="text-center sm:text-left flex flex-col justify-center h-full">
                 <p className="text-muted-foreground mb-2">Hello, I'm</p>
                 <h1
                   style={{ lineHeight: 1.3 }}
@@ -73,13 +72,6 @@ const Hero = () => {
                   Hanzla Sibghat
                 </h1>
               </div>
-              <motion.div
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity, repeatDelay: 4 }}
-                className="text-4xl"
-              >
-                💻
-              </motion.div>
             </div>
 
             <motion.div
@@ -197,14 +189,14 @@ const Hero = () => {
               className="btn-ghost-hero px-8 py-4 text-lg group"
               onClick={() => {
                 const link = document.createElement("a");
-                link.href = "/resume.pdf";
+                link.href = "/Hanzla_Sibghat_Resume.pdf";
                 link.download = "Hanzla_Sibghat_Resume.pdf";
                 document.body.appendChild(link);
                 link.click();
                 document.body.removeChild(link);
               }}
             >
-              <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
+           <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
               Get Resume
             </Button>
           </motion.div>
