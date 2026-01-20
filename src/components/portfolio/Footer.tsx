@@ -37,29 +37,6 @@ const Footer = () => {
       </div>
 
       <div className="container-custom py-16 relative z-10">
-        {/* Personal Quote/Philosophy */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <div className="glass-card max-w-2xl mx-auto">
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3, duration: 1 }}
-              className="text-lg md:text-xl text-muted-foreground italic leading-relaxed mb-4"
-            >
-              "Code is poetry written in logic. Every function tells a story,
-              every algorithm solves a puzzle, and every project is a new
-              adventure."
-            </motion.p>
-            <p className="text-sm text-primary font-medium">
-              — My development philosophy
-            </p>
-          </div>
-        </motion.div>
 
         {/* Creative Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">

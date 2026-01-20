@@ -29,7 +29,7 @@ const Index = () => {
                 I'm{" "}
 
                 currently working at{" "}
-                <span className="text-primary font-semibold">
+                <span className="inline-block px-3 py-1 bg-yellow-300 text-yellow-900 font-extrabold rounded shadow-lg animate-pulse border-2 border-yellow-500" style={{letterSpacing: '0.5px', fontSize: '1.15em'}}>
                   Siemens Munich
                 </span>{" "}
                 as a{" "}
