@@ -45,7 +45,7 @@ const Experience = () => {
       companyColor: "from-blue-500 to-purple-600",
     },
     {
-      title: "Full Stack Developer",
+      title: "Software Engineer",
       company: "National Database and Registration Authority (NADRA)",
       location: "Islamabad, Pakistan",
       period: "Feb 2024 – Sept 2024",
@@ -71,7 +71,7 @@ const Experience = () => {
       companyColor: "from-orange-500 to-yellow-600",
     },
     {
-      title: "Full Stack Developer",
+      title: "Software Engineer",
       company: "PLC Group",
       location: "Ontario, Canada (Remote)",
       period: "July 2023 – Feb 2024",

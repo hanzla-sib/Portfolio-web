@@ -184,7 +184,7 @@ const Hero = () => {
               <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
 
-            <Button
+            {/* <Button
               variant="outline"
               className="btn-ghost-hero px-8 py-4 text-lg group"
               onClick={() => {
@@ -198,7 +198,7 @@ const Hero = () => {
             >
            <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
               Get Resume
-            </Button>
+            </Button> */}
           </motion.div>
 
           {/* Skills Highlight */}
