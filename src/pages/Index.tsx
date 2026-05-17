@@ -13,43 +13,24 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <section id="about" className="section-padding bg-muted/20 mt-4">
-          <div className="container-custom text-center">
-            <h2 className="text-section-title gradient-text mb-6">About Me</h2>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                <span className="block mb-2 font-semibold text-primary">Eligible to work in Germany (EU student visa)</span>
-                <span className="block mb-2 font-semibold text-primary">Currently at
-                  <span
-                    className="inline-block px-3 py-1 font-extrabold rounded shadow-xl animate-pulse border-2 border-accent mx-1"
-                    style={{
-                      background: 'linear-gradient(90deg, #3b82f6 0%, #06b6d4 100%)',
-                      color: 'white',
-                      letterSpacing: '0.5px',
-                      fontSize: '1.15em',
-                      boxShadow: '0 4px 24px 0 rgba(59,130,246,0.15)'
-                    }}
-                  >
-                    Siemens Munich
-                  </span>
-                  as Software & AI Engineer
-                </span>
-                <br />
-                3+ years experience building scalable, user-focused apps with React, Next.js, and GenAI (LangChain, RAG, LLMs).
+        <section id="about" className="section-padding bg-muted/20">
+          <div className="container-custom max-w-4xl mx-auto">
+            <h2 className="text-section-title gradient-text mb-8 text-center">About</h2>
+            <div className="space-y-4 text-base md:text-lg text-muted-foreground leading-relaxed">
+              <p>
+                I'm a Software Engineer based in Munich, currently working at <span className="text-foreground font-semibold">Siemens AG</span> while pursuing my MSc in Computer Science at the University of Passau. I have 3+ years of professional experience building end-to-end web applications across enterprise, government, and startup environments.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                🚀 Full Stack & GenAI Engineer | 🧠 AI Solutions Architect
-                <br />
-                MSc Computer Science, University of Passau
+              <p>
+                My day-to-day spans full-stack delivery: designing REST and GraphQL APIs, building responsive React and Next.js interfaces, optimizing databases, and shipping production systems that have supported 100K+ concurrent users with zero-downtime deployments. I'm comfortable owning features from schema and API design through to UI implementation and deployment.
               </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                <span className="font-semibold text-primary">Key strengths:</span> Fast learner, creative problem solver, clear communicator, thrive in cross-functional teams.
+              <p>
+                I'm eligible to work in Germany on an EU student visa and currently open to full-time, freelance, and collaboration opportunities.
               </p>
             </div>
           </div>
         </section>
-        <Skills />
         <Experience />
+        <Skills />
         <Projects />
         <Education />
         <Contact />

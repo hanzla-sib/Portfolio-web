@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Menu, X, Github, Linkedin, Mail, MapPin } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Menu, X, Github, Linkedin, Mail } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,8 +15,8 @@ const Header = () => {
 
   const navItems = [
     { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
     { name: "Experience", href: "#experience" },
+    { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
     { name: "Contact", href: "#contact" },
@@ -31,76 +29,47 @@ const Header = () => {
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
       }
-    }, 200); // Delay to allow menu to close and DOM to update
+    }, 200);
   };
 
   return (
-    <motion.header
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "glass backdrop-blur-xl" : "bg-transparent"
       }`}
     >
       <div className="container-custom px-4 sm:px-6">
-        <div className="flex flex-col sm:flex-row items-center justify-between h-16 md:h-20 w-full">
-          {/* Logo */}
-          <div className="flex items-center w-full justify-between">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.2 }}
-              className="flex items-center space-x-3 mb-2 sm:mb-0 mt-3 sm:mt-0"
-            >
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">
-                  HS
-                </span>
-              </div>
-              <div className="block md:block text-center md:text-left">
-                <h1 className="font-bold text-base sm:text-lg gradient-text">Hanzla Sibghat</h1>
-                <p className="text-xs sm:text-sm text-muted-foreground">Software & AI Engineer</p>
-              </div>
-            </motion.div>
-            {/* Mobile Menu Button - moved to right with margin */}
-            <motion.button
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              onClick={() => setIsOpen(!isOpen)}
-               className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 ml-2 flex-shrink-0"
-            >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </motion.button>
-          </div>
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <button
+            onClick={() => scrollToSection("#about")}
+            className="flex items-center gap-3"
+          >
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-lg">HS</span>
+            </div>
+            <div className="hidden sm:block text-left">
+              <h1 className="font-bold text-base sm:text-lg">Hanzla Sibghat</h1>
+              <p className="text-xs text-muted-foreground">Software Engineer</p>
+            </div>
+          </button>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <motion.button
+          <nav className="hidden md:flex items-center space-x-7">
+            {navItems.map((item) => (
+              <button
                 key={item.name}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 + index * 0.1 }}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors duration-300 font-medium relative group"
+                className="text-foreground hover:text-primary transition-colors duration-200 font-medium text-sm"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </motion.button>
+              </button>
             ))}
           </nav>
 
-          {/* Contact Links */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-            className="hidden lg:flex items-center space-x-4"
-          >
+          <div className="hidden lg:flex items-center space-x-2">
             <a
               href="mailto:hanzlasib24@gmail.com"
-              className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
+              aria-label="Email"
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
             >
               <Mail className="w-5 h-5" />
             </a>
@@ -108,7 +77,8 @@ const Header = () => {
               href="https://github.com/hanzla-sib"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
+              aria-label="GitHub"
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
             >
               <Github className="w-5 h-5" />
             </a>
@@ -116,63 +86,48 @@ const Header = () => {
               href="https://www.linkedin.com/in/hanzlasibghat/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-primary/10 transition-colors duration-300 hover-glow"
+              aria-label="LinkedIn"
+              className="p-2 rounded-lg hover:bg-primary/10 transition-colors"
             >
               <Linkedin className="w-5 h-5" />
             </a>
-          </motion.div>
+          </div>
 
-          {/* ...existing code... */}
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+            className="md:hidden p-2 rounded-lg hover:bg-primary/10 transition-colors"
+          >
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
 
-        {/* Mobile Navigation */}
-        <motion.div
-          initial={false}
-          animate={{
-            height: isOpen ? "auto" : 0,
-            opacity: isOpen ? 1 : 0,
-          }}
-          transition={{ duration: 0.3 }}
-          className="md:hidden overflow-hidden"
-        >
-          <div className="py-4 space-y-2 glass-card mt-4">
+        {isOpen && (
+          <div className="md:hidden py-4 space-y-1 glass-card mt-2">
             {navItems.map((item) => (
               <button
                 key={item.name}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 transition-colors duration-300 rounded-lg"
+                className="block w-full text-left px-4 py-3 text-foreground hover:text-primary hover:bg-primary/5 transition-colors rounded-lg"
               >
                 {item.name}
               </button>
             ))}
             <div className="flex items-center justify-center space-x-4 pt-4 border-t border-border">
-              <a
-                href="mailto:hanzlasib24@gmail.com"
-                className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
-              >
+              <a href="mailto:hanzlasib24@gmail.com" aria-label="Email" className="p-3 rounded-lg hover:bg-primary/10 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
-              <a
-                href="https://github.com/hanzla-sib"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
-              >
+              <a href="https://github.com/hanzla-sib" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="p-3 rounded-lg hover:bg-primary/10 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/hanzlasibghat/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
-              >
+              <a href="https://www.linkedin.com/in/hanzlasibghat/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="p-3 rounded-lg hover:bg-primary/10 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </div>
-        </motion.div>
+        )}
       </div>
-    </motion.header>
+    </header>
   );
 };
 

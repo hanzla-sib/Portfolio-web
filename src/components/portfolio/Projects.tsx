@@ -1,306 +1,131 @@
-import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import {
-  ExternalLink,
-  Github,
-  Play,
-  Code,
-  Brain,
-  Database,
-  Globe,
-} from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Projects = () => {
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
   const projects = [
     {
       title: "PromptCraft-AI",
-      techStack: "Next.js, React, Tailwind CSS, Framer Motion, Google Gemini API",
+      description:
+        "Multi-feature AI platform built with Next.js, TypeScript, and Tailwind CSS, integrated with Google Gemini API for recipe generation, code assistance, chat, summarization, and image analysis. Currently serving 500+ active users.",
       technologies: [
         "Next.js",
-        "React",
+        "TypeScript",
         "Tailwind CSS",
         "Framer Motion",
         "Google Gemini API",
-        "AI Integration",
-        "Markdown Rendering",
-        "prism-react-renderer",
       ],
-      status: "Live",
-      badge: "AI Powered",
       links: [
-        { label: "View", url: "https://github.com/hanzla-sib/PromptCraft-AI" },
-        { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/" },
+        { label: "GitHub", url: "https://github.com/hanzla-sib/PromptCraft-AI", icon: Github },
+        { label: "Live Demo", url: "https://generative-ui-sdk.vercel.app/", icon: ExternalLink },
       ],
-      description:
-        "A beginner-friendly, modern web application built with Next.js. Explore AI-powered features like recipe generation, text summarization, code generation with live preview, chat (with Google Search and Think modes), and image analysis. Used by 500+ users. Uses Google Gemini API for AI responses, Tailwind CSS for styling, and Framer Motion for smooth animations. Markdown rendering and code preview make it educational and easy to use.",
     },
     {
-      title: "CompAIler",
-      techStack: "Python, AI",
-      technologies: [
-        "AI",
-        "Code Analysis",
-        "gemini-1.5",
-        "Code Compilation",
-        "Error Detection",
-      ],
-      status: "Live",
-      badge: "AI Powered",
-      links: [
-        { label: "View", url: "https://github.com/hanzla-sib/CompAIler" },
-        { label: "Live Demo", url: "https://comp-a-iler.vercel.app/" },
-      ],
+      title: "Remote Care",
       description:
-        "AI-powered code compiler and analyzer built with Python. Supports intelligent code suggestions and error detection. Improved code review speed by 30%.",
+        "End-to-end health monitoring platform with an Android mobile app, React web dashboard, IoT smartwatch integration, and Node.js backend for real-time patient vitals tracking and threshold-based alerting for caregivers.",
+      technologies: ["React.js", "Node.js", "Android", "IoT", "Java", "Firebase"],
+      links: [
+        { label: "Web Repo", url: "https://github.com/hanzla-sib/Remote-Care-Web", icon: Github },
+        { label: "Android Repo", url: "https://github.com/hanzla-sib/SMD_PROJECT_REMOTECARE", icon: Github },
+        { label: "Demo Video", url: "https://www.youtube.com/watch?v=eiOggXuPx6M", icon: ExternalLink },
+      ],
     },
     {
       title: "CodeSensei",
-      techStack: "React, Next.js",
-      technologies: [
-        "React",
-        "Next.js",
-        "AI",
-        "Gemini",
-        "Mentoring",
-        "Code Review",
-      ],
-      status: "Live",
-      badge: "AI Powered",
-      links: [
-        { label: "View", url: "https://github.com/hanzla-sib/CodeSensei" },
-        { label: "Live Demo", url: "https://code-sensei-1l6g.vercel.app/" },
-      ],
       description:
-        "Modern code review and mentoring platform built with React and Next.js. Features collaborative reviews and feedback workflows. Used by 100+ developers for mentoring and code review.",
+        "Code mentoring and review platform built with React and Next.js. Features collaborative reviews, real-time AI feedback, and analytics dashboards. Used by 100+ developers.",
+      technologies: ["React", "Next.js", "Tailwind CSS", "Gemini AI"],
+      links: [
+        { label: "GitHub", url: "https://github.com/hanzla-sib/CodeSensei", icon: Github },
+        { label: "Live Demo", url: "https://code-sensei-1l6g.vercel.app/", icon: ExternalLink },
+      ],
     },
     {
-      title: "Remote Care (Android + Web + IoT)",
-      techStack: "Android, Web, IoT",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "IoT",
-        "Android",
-        "SQL",
-        "Firebase",
-        "Java",
-      ],
-      status: "Completed",
-      links: [
-        { label: "Web", url: "https://github.com/hanzla-sib/Remote-Care-Web" },
-        {
-          label: "Android",
-          url: "https://github.com/hanzla-sib/SMD_PROJECT_REMOTECARE",
-        },
-        {
-          label: "Watch",
-          url: "https://github.com/hanzla-sib/RemoteCare_Watch",
-        },
-        {
-          label: "Demo",
-          url: "https://www.youtube.com/watch?v=eiOggXuPx6M&ab_channel=HanzlaSib",
-        },
-      ],
+      title: "CompAIler",
       description:
-        "Developed a full-stack app integrating IoT devices to monitor patient health and enable real-time communication with doctors. Features include live data streaming, secure messaging, and cross-platform support.",
+        "AI-powered code analyzer and compiler built with Python and Gemini 1.5, offering semantic analysis, optimization suggestions, and structural review. Improved code review speed by 30% for end users.",
+      technologies: ["Python", "Gemini 1.5", "Code Analysis"],
+      links: [
+        { label: "GitHub", url: "https://github.com/hanzla-sib/CompAIler", icon: Github },
+        { label: "Live Demo", url: "https://comp-a-iler.vercel.app/", icon: ExternalLink },
+      ],
     },
     {
-      title: "Dodge EM (C++)",
-      techStack: "C++, OpenGL",
+      title: "Network Analysis",
+      description:
+        "Large-scale network analysis tool built in C++ for processing graphs with millions of nodes. Optimized for performance through efficient data structures and graph algorithms.",
+      technologies: ["C++", "Graph Algorithms", "File Handling"],
+      links: [
+        { label: "GitHub", url: "https://github.com/hanzla-sib/Network-Analysis-C-", icon: Github },
+        { label: "Demo Video", url: "https://youtu.be/SnBa_IvpW74", icon: ExternalLink },
+      ],
+    },
+    {
+      title: "Dodge EM",
+      description:
+        "Classic car-dodging game clone implemented in C++ with OpenGL, featuring smooth animations, interactive gameplay, and an intuitive UI.",
       technologies: ["C++", "OpenGL"],
-      status: "Completed",
       links: [
-        { label: "View", url: "https://github.com/hanzla-sib/Dodge_em-game" },
+        { label: "GitHub", url: "https://github.com/hanzla-sib/Dodge_em-game", icon: Github },
       ],
-      description:
-        "Created a car game clone with interactive gameplay, smooth animations, and an intuitive UI using C++ and OpenGL.",
     },
-    {
-      title: "Network Analysis (C++)",
-      techStack: "C++, File Handling",
-      technologies: ["C++", "File Handling", "Graph Algorithms"],
-      status: "Completed",
-      links: [
-        {
-          label: "View",
-          url: "https://github.com/hanzla-sib/Network-Analysis-C-",
-        },
-        { label: "Demo", url: "https://youtu.be/SnBa_IvpW74" },
-      ],
-      description:
-        "Large-scale network analysis tool capable of processing and analyzing graphs with millions of nodes. Optimized for performance and complex data structures.",
-    },
-
   ];
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
-  };
-
-  const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.6,
-      },
-    },
-  };
-
   return (
-    <section id="projects" className="section-padding bg-muted/30">
+    <section id="projects" className="section-padding bg-muted/20">
       <div className="container-custom">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-section-title gradient-text mb-6">
-            Featured Projects
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my recent work, featuring AI-powered applications,
-            full-stack solutions, and scalable backend architectures.
+        <div className="text-center mb-12">
+          <h2 className="text-section-title gradient-text mb-4">Projects</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
+            A selection of personal and academic projects.
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          ref={ref}
-          variants={containerVariants}
-          initial="hidden"
-          animate={inView ? "visible" : "hidden"}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8"
-        >
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.title}
-              variants={itemVariants}
-              className="glass-card hover-glow group"
-            >
-              <div className="mb-6">
-                <h3 className="text-card-title group-hover:text-primary transition-colors mb-2">
-                  {project.title}
-                </h3>
-                <span className="px-2 py-1 bg-primary/10 text-primary rounded text-xs font-medium mr-2">
-                  {project.techStack}
-                </span>
-                <span className="px-2 py-1 bg-muted text-muted-foreground rounded text-xs font-medium">
-                  {project.status}
-                </span>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          {projects.map((project) => (
+            <div key={project.title} className="glass-card hover-glow flex flex-col">
+              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+              <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-5 flex-1">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-5">
+                {project.technologies.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2.5 py-1 bg-muted text-muted-foreground rounded-full text-xs font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-              <div className="mb-6">
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {project.description}
-                </p>
-              </div>
-              <div className="mb-6">
-                <h4 className="font-semibold mb-3 text-foreground">
-                  Technologies:
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies &&
-                    project.technologies.map((tech, techIndex) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 bg-muted text-muted-foreground rounded-full text-xs font-medium hover:bg-primary/10 hover:text-primary transition-colors cursor-default"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                </div>
-              </div>
-              <div className="mb-6">
-                <h4 className="font-semibold mb-3 text-foreground">Links:</h4>
-                <div className="flex flex-wrap gap-2">
-                  {project.links.map((link, linkIndex) => (
-                    <Button
-                      key={link.label}
-                      size="sm"
-                      variant="outline"
-                      className="group/btn hover:bg-primary/10 hover:border-primary hover:text-primary"
-                      onClick={() => window.open(link.url, "_blank")}
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2 group-hover/btn:scale-110 transition-transform" />
-                      {link.label}
-                    </Button>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </motion.div>
-
-        {/* Projects Summary */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-16 text-center"
-        >
-          <div className="glass-card max-w-4xl mx-auto mb-8">
-            <h3 className="text-2xl font-bold mb-4 gradient-text">
-              Project Impact
-            </h3>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">6</h4>
-                <p className="text-sm text-muted-foreground">Major Projects</p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">3</h4>
-                <p className="text-sm text-muted-foreground">
-                  AI-Powered Solutions
-                </p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">15+</h4>
-                <p className="text-sm text-muted-foreground">
-                  Technologies Used
-                </p>
-              </div>
-              <div>
-                <h4 className="text-2xl font-bold text-primary mb-2">100%</h4>
-                <p className="text-sm text-muted-foreground">Open Source</p>
+              <div className="flex flex-wrap gap-2">
+                {project.links.map((link) => (
+                  <Button
+                    key={link.label}
+                    size="sm"
+                    variant="outline"
+                    onClick={() => window.open(link.url, "_blank")}
+                    className="hover:bg-primary/10 hover:border-primary hover:text-primary"
+                  >
+                    <link.icon className="w-4 h-4 mr-2" />
+                    {link.label}
+                  </Button>
+                ))}
               </div>
             </div>
-            <p className="text-muted-foreground mt-6 leading-relaxed">
-              All projects demonstrate my commitment to{" "}
-              <span className="text-primary font-semibold">clean code</span>,
-              <span className="text-primary font-semibold">
-                {" "}
-                modern architecture
-              </span>
-              , and
-              <span className="text-primary font-semibold">
-                {" "}
-                innovative problem-solving
-              </span>
-              . Each solution is built with scalability and maintainability in
-              mind.
-            </p>
-          </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-10">
           <Button
-            size="lg"
-            className="mt-4 bg-gradient-to-r from-primary to-primary-glow hover:from-primary-glow hover:to-primary text-white font-semibold"
+            variant="outline"
             onClick={() => window.open("https://github.com/hanzla-sib?tab=repositories", "_blank")}
+            className="hover:bg-primary/10 hover:border-primary hover:text-primary"
           >
-            View Other Projects
+            <Github className="w-4 h-4 mr-2" />
+            View All Repositories
           </Button>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

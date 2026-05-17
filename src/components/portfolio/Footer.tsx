@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import { Heart, ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowUp, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -10,247 +9,53 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    {
-      name: "GitHub",
-      icon: Github,
-      url: "https://github.com/hanzla-sib",
-    },
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      url: "https://www.linkedin.com/in/hanzlasibghat/",
-    },
-    {
-      name: "Email",
-      icon: Mail,
-      url: "mailto:hanzlasib24@gmail.com",
-    },
+    { name: "GitHub", icon: Github, url: "https://github.com/hanzla-sib" },
+    { name: "LinkedIn", icon: Linkedin, url: "https://www.linkedin.com/in/hanzlasibghat/" },
+    { name: "Email", icon: Mail, url: "mailto:hanzlasib24@gmail.com" },
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-background via-muted/20 to-background">
-      {/* Creative Background Elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/6 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/6 w-48 h-48 bg-primary/3 rounded-full blur-3xl animate-pulse delay-1000" />
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-1 bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
-      </div>
-
-      <div className="container-custom py-16 relative z-10">
-
-        {/* Creative Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-12">
-          {/* Personal Brand - Larger Space */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="md:col-span-5 glass-card hover-glow"
-          >
-            <div className="flex items-start gap-4 mb-6">
-              <motion.div
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.6 }}
-                className="w-16 h-16 bg-gradient-to-br from-primary to-primary-glow rounded-2xl flex items-center justify-center shadow-lg"
-              >
-                <span className="text-white font-bold text-2xl">MA</span>
-              </motion.div>
-              <div>
-                <h3 className="text-2xl font-bold gradient-text mb-1">
-                  Hanzla Sibghat
-                </h3>
-                <p className="text-primary font-medium mb-2">
-                  Software & AI Engineer
-                </p>
-                <div className="flex gap-2">
-                  <span className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">
-                    Munich 🇩🇪
-                  </span>
-                  <span className="text-xs px-2 py-1 bg-primary/10 text-primary rounded-full">
-                    MSc Student 🎓
-                  </span>
-                </div>
-              </div>
+    <footer className="border-t border-border bg-muted/10">
+      <div className="container-custom py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+          <div className="flex items-center gap-3">
+            <div className="w-9 h-9 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-sm">HS</span>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              Crafting digital experiences that matter. From conception to
-              deployment, I believe in building software that not only works but
-              inspires.
-            </p>
-
-            {/* Tech Stack Mini Display */}
-            <div className="flex flex-wrap gap-2">
-              {["React", "Next.js", "Node.js", "TypeScript", "Python", "LangChain", "Docker"].map(
-                (tech, index) => (
-                  <motion.span
-                    key={tech}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                    className="text-xs px-2 py-1 bg-muted text-muted-foreground rounded border hover:border-primary hover:text-primary transition-colors"
-                  >
-                    {tech}
-                  </motion.span>
-                )
-              )}
+            <div className="text-sm text-muted-foreground">
+              <p className="font-medium text-foreground">Hanzla Sibghat</p>
+              <p>Software Engineer · Munich, Germany</p>
             </div>
-          </motion.div>
-
-          {/* Quick Navigation - Styled as Cards */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="md:col-span-3 space-y-3"
-          >
-            <h4 className="font-semibold mb-4 flex items-center gap-2">
-              <span className="w-6 h-6 bg-primary/20 rounded-full flex items-center justify-center">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-              </span>
-              Navigate
-            </h4>
-            <div className="space-y-2">
-              {[
-                { name: "My Journey", href: "#skills", emoji: "🚀" },
-                { name: "Experience", href: "#experience", emoji: "💼" },
-                { name: "Projects", href: "#projects", emoji: "⚡" },
-                { name: "Let's Talk", href: "#contact", emoji: "💬" },
-              ].map((link) => (
-                <motion.button
-                  key={link.name}
-                  onClick={() => {
-                    const element = document.querySelector(link.href);
-                    if (element) {
-                      element.scrollIntoView({ behavior: "smooth" });
-                    }
-                  }}
-                  whileHover={{ x: 5 }}
-                  className="flex items-center gap-3 w-full text-left p-2 rounded-lg hover:bg-primary/5 transition-colors duration-300 group"
-                >
-                  <span className="text-lg group-hover:scale-110 transition-transform">
-                    {link.emoji}
-                  </span>
-                  <span className="text-muted-foreground group-hover:text-primary transition-colors">
-                    {link.name}
-                  </span>
-                </motion.button>
-              ))}
-            </div>
-          </motion.div>
-
-          {/* Connect Section - More Interactive */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="md:col-span-4 glass-card hover-glow"
-          >
-            <h4 className="font-semibold mb-4 flex items-center gap-2">
-              <motion.span
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                🤝
-              </motion.span>
-              Let's Connect
-            </h4>
-
-            <div className="space-y-4 mb-6">
-              <div className="flex items-center gap-3 text-sm">
-                <span className="text-lg">📧</span>
-                <span className="text-muted-foreground">
-                  hanzlasib24@gmail.com
-                </span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <span className="text-lg">📱</span>
-                <span className="text-muted-foreground">+49 170 9098399</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <span className="text-lg">📍</span>
-                <span className="text-muted-foreground">Munich, Germany</span>
-              </div>
-            </div>
-
-            {/* Social Links with Personality */}
-            <div className="flex gap-3">
-              {[
-                {
-                  name: "GitHub",
-                  icon: Github,
-                  url: "https://github.com/hanzla-sib",
-                  color: "hover:text-gray-400",
-                },
-                {
-                  name: "LinkedIn",
-                  icon: Linkedin,
-                  url: "https://www.linkedin.com/in/hanzlasibghat/",
-                  color: "hover:text-blue-500",
-                },
-                {
-                  name: "Email",
-                  icon: Mail,
-                  url: "mailto:hanzlasib24@gmail.com",
-                  color: "hover:text-green-500",
-                },
-              ].map((social) => (
-                <motion.a
-                  key={social.name}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`p-3 rounded-xl bg-muted/50 backdrop-blur-sm hover:bg-primary/10 transition-all duration-300 ${social.color} group`}
-                >
-                  <social.icon className="w-5 h-5 group-hover:scale-110 transition-transform" />
-                </motion.a>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-
-        {/* Creative Bottom Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-primary/20"
-        >
-          <div className="flex items-center gap-4 mb-4 md:mb-0">
-            <p className="text-muted-foreground text-sm flex items-center gap-2">
-              © {currentYear} Crafted with
-              <motion.span
-                animate={{ scale: [1, 1.2, 1] }}
-                transition={{ duration: 1.5, repeat: Infinity }}
-              >
-                <Heart className="w-4 h-4 text-red-500" />
-              </motion.span>
-              and lots of ☕ by Hanzla Sibghat
-            </p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-2 text-xs text-muted-foreground">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              Available for opportunities
-            </div>
+          <div className="flex items-center gap-2">
+            {socialLinks.map((social) => (
+              <a
+                key={social.name}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.name}
+                className="p-2 rounded-lg hover:bg-primary/10 hover:text-primary transition-colors"
+              >
+                <social.icon className="w-5 h-5" />
+              </a>
+            ))}
             <Button
               onClick={scrollToTop}
               variant="outline"
               size="sm"
-              className="group hover:bg-primary/10 hover:border-primary hover:text-primary"
+              className="ml-2 hover:bg-primary/10 hover:border-primary hover:text-primary"
             >
-              <motion.div
-                whileHover={{ y: -2 }}
-                transition={{ type: "spring", stiffness: 400 }}
-              >
-                <ArrowUp className="w-4 h-4 mr-2" />
-              </motion.div>
-              Back to Top
+              <ArrowUp className="w-4 h-4 mr-1" />
+              Top
             </Button>
           </div>
-        </motion.div>
+        </div>
+
+        <div className="mt-6 pt-6 border-t border-border text-center text-xs text-muted-foreground">
+          <p>© {currentYear} Hanzla Sibghat. Built with React, TypeScript, and Tailwind CSS.</p>
+        </div>
       </div>
     </footer>
   );
