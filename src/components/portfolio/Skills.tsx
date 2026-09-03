@@ -1,53 +1,43 @@
 const Skills = () => {
   const skillGroups = [
     {
-      title: "Languages",
-      skills: ["TypeScript", "JavaScript", "Java", "Python", "SQL", "C++"],
+      title: "Generative AI",
+      skills: ["LangGraph", "LangChain", "Multimodal Context Processing", "Prompt Optimization", "RAG"],
     },
     {
       title: "Frontend",
       skills: [
-        "React.js",
-        "Next.js",
+        "React",
         "Redux",
-        "Redux Toolkit",
-        "React Query",
-        "Tailwind CSS",
-        "Material-UI",
-        "Shadcn/UI",
+        "Next.js",
+        "Material UI",
+        "Web Extensions (Manifest V3)",
+        "HTML",
+        "CSS",
       ],
     },
     {
-      title: "Backend",
+      title: "Backends & APIs",
       skills: [
-        "Spring Boot",
+        "Flask",
         "Node.js",
         "Express.js",
-        "FastAPI",
+        "Spring Boot",
         "REST",
         "GraphQL",
       ],
     },
     {
-      title: "Databases",
-      skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Oracle"],
+      title: "Data & Infra",
+      skills: ["AWS", "PostgreSQL", "MySQL", "Redis", "Kafka", "RabbitMQ", "Docker", "CI/CD (Github Actions)"],
     },
     {
-      title: "Cloud & DevOps",
-      skills: ["Docker", "AWS", "CI/CD", "GitHub Actions", "Vercel"],
+      title: "Tools",
+      skills: ["Claude Code", "Github Copilot", "VS Code", "Git"],
     },
     {
-      title: "Testing & Tools",
-      skills: [
-        "Jest",
-        "React Testing Library",
-        "Playwright",
-        "Cypress",
-        "JUnit",
-        "Git",
-        "Postman",
-        "Linux",
-      ],
+      title: "Languages",
+      skills: ["TypeScript", "JavaScript", "Python", "SQL", "Java"],
     },
   ];
 

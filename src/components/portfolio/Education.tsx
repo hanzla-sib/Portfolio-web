@@ -6,7 +6,7 @@ const Education = () => {
       degree: "MSc in Computer Science",
       university: "University of Passau",
       location: "Passau, Germany",
-      period: "Oct 2024 – Present",
+      period: "Oct 2024 – Feb 2027",
       status: "Current",
       description:
         "Pursuing an MSc in Computer Science with focus on Distributed Systems, Cloud Computing, Software Architecture, and Advanced Algorithms in an international research environment.",
