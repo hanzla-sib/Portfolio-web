@@ -58,21 +58,7 @@ const Hero = () => {
               View Experience
               <ArrowDown className="ml-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Button>
-            <Button
-              variant="outline"
-              className="btn-ghost-hero group"
-              onClick={() => {
-                const link = document.createElement("a");
-                link.href = "/Hanzla_Sibghat_Resume.pdf";
-                link.download = "Hanzla_Sibghat_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
-            >
-              <Download className="mr-2 w-5 h-5 group-hover:translate-y-1 transition-transform" />
-              Download Resume
-            </Button>
+            {/* Download Resume button removed for now */}
           </div>
         </div>
       </div>
